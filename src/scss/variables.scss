@@ -1,0 +1,89 @@
+$color: (
+    base: #4d525a,
+    -1: #091423,
+    -2: #1b3151,
+    -3: #fff,
+    -4: #0e3306,
+    -5: #2fae12,
+
+    icon: #b7bec2,
+
+    nav-strip: #6c7076,
+    nav: #fff,
+    nav-hover: #65e496,
+
+    link: #65e496,
+    link-2: #4d525a,
+    link-3: #091423,
+
+    btn: #0e3306,
+    btn-2: #4d525a,
+    btn-catalog: #fff,
+    btn-form: #0e3306
+);
+
+$bg: (
+    base: #fff,
+    2: #f7f9fa,
+    3: #f3f9f1,
+
+    btn: #d5ef28,
+    btn-2: #f5f6f6,
+    btn-catalog: #2fae12,
+    btn-form: #fff
+);
+
+:root {
+    --font-fam-base: 'Montserrat', 'sans-serif';
+
+    --wrap-max-width: 1150px;
+}
+
+$fs: (
+    base: 16px,
+
+    title-xl: 55px,
+    title-lg: 44px,
+    title-md: 40px,
+    title-s: 24px,
+    title-xs: 20px,
+
+    text-xl: 22px,
+    text-lg: 20px,
+    text-md: 18px,
+    text-s: 13px,
+    text-xs: 12px,
+
+    nav: 18px,
+
+    nav-strip: 11px,
+
+    link: 14px,
+    link-2: 12px,
+    link-3: 15px,
+    link-back: 11px,
+
+    btn: 14px,
+    btn_2: 13px,
+    btn_3: 16px,
+    btn-catalog: 19px,
+    btn-form: 14px,
+
+    price: 27px,
+    price-old: 15px
+);
+
+$params: (
+    text-shadow:  0 2px 2px rgba(0, 0, 0, .5),
+    container-min-width: 320px,
+    container-max-width: 1300px,
+    container-margin: 0 auto,
+    container-padding:  15px,
+    border-radius: 5px,
+    animation-speed: 150ms,
+    animation-middle-speed: 400ms,
+    animation-slow-speed: 600ms,
+    animation: 150ms,
+    animation-middle: 400ms,
+    animation-slow:all 600ms,
+);

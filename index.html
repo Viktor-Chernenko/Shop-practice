@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrap"></div>
+    </header>
+    <main>
+        <div class="mainList">
+            <div class="wrap">
+                <div class="grid-box">
+                    <div class="grid-2">
+                        <div class="grid-item">
+                            <form class="mainList__item" action="">
+                                <label class="mainList__label">Бюджет
+                                    <input class="mainList__input" type="text" placeholder="Введите ваш бюджет на месяц" required="required" id="budget" />
+                                </label>
+                                <label class="mainList__label">Название магазина
+                                    <input class="mainList__input" type="text" placeholder="Введите название магазина" required="required" id="nameShop" />
+                                </label>
+                                <label class="mainList__label">Список продукции
+                                    <input class="mainList__input" type="text" placeholder="Название продукции(через запятую)" required="required" id="products" />
+                                </label>
+                                <label class="mainList__label">Время визита
+                                    <input class="mainList__input" type="text" placeholder="Введите время визита" required="required" id="status" />
+                                </label>
+                                <div class="mainList-box">
+                                    <div class="mainList-box__item">
+                                        <div class="mainList-employer">
+                                            <label class="mainList__label">Имя сотрудника
+                                                <input class="mainList__input employer__name" type="text" placeholder="Введите имя сотрудника" required="required" />
+                                            </label>
+                                            <label class="mainList__label">Должность
+                                                <input class="mainList__input employer__position" type="text" placeholder="Введите его должность" required="required" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="btn-box">
+                                        <button class="btn btn-employer">Добавить сотрудника</button>
+                                    </div>
+                                </div>
+                                <label class="mainList__label mainList-discount">Установить ли скидку в 80% на все товары?
+                                    <div class="mainList-discount__item"></div>
+                                    <input class="mainList-discount__checkbox" type="checkbox" />
+                                </label>
+                                <div class="btn-box">
+                                    <button class="btn btn-result" type="submit">Рассчитать</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="grid-item">
+                            <div class="mainList__item">
+                                <div class="mainList__text">Дневной бюджет:<span class="mainList__budget"></span></div>
+                                <div class="mainList__text">Название магазина:<span class="mainList__nameShop"></span></div>
+                                <div class="mainList__text">Список продукции:<span class="mainList__products"></span></div>
+                                <div class="mainList__text mainList__text_list">Список сотрудников:<span class="mainList__employer"></span></div>
+                                <div class="mainList__text mainList__status">Статус работы:
+                                    <div class="mainList__status_now"></div>
+                                    <div class="mainList__status_icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="wrap"></div>
+    </footer>
+    <div class="pop-up">
+        <div class="pop-up__box">
+            <div class="pop-up__btn-box">
+                <button class="pop-up__close"></button>
+            </div>
+            <div class="pop-up__title">Внимание</div>
+            <div class="pop-up__text-box"><span class="pop-up__text"></span></div>
+        </div>
+    </div>
+    <script src="./js/jquery-3.0.0.min.js"></script>
+    <script src="./js/script.js"></script>
+    <svg width="0" height="0" class="hidden">
+    </svg>
+</body>
+
+</html>

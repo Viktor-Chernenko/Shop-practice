@@ -1,0 +1,10 @@
+mixin product-card-min(img_src, img_alt, name, text, marker, marker_text)
+    .product-card-min
+        .product-card-min__wrap
+        a(href="#!").product-card-min__img-box
+            .marker-box
+                .marker(class=marker)= marker_text
+            img(src=img_src, alt=img_alt).product-card-min__img
+        .product-card-min__description
+            a(href="#!").product-card-min__name= name
+            .product-card-min__text= text

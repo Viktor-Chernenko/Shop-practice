@@ -1,0 +1,26 @@
+mixin product-card(img_src, img_alt, name, text, marker, marker_text, bonus, bonus__text, list_info_text_1, list_info_text_2, list_info_text_3, price, price_old)
+    .product-card
+        a(href="#!").product-card__img-box
+            .marker-box
+                .marker(class=marker)= marker_text
+            img(src=img_src, alt=img_alt).product-card__img
+        .product-card__description
+            .section-top
+                .section-top__item
+                    a(href="#!").product-card__name= name
+                .section-top__item
+                    .div.bonus(class=bonus)
+                        <svg class="bonus__icon"><use xlink:href="#icon-bonus"></use></svg>
+                        span.bonus__text= bonus__text
+
+            .text-2= text
+
+            ul.list-info
+                li.list-info__item= list_info_text_1
+                li.list-info__item= list_info_text_2
+                li.list-info__item= list_info_text_3
+
+            .product-card-box
+                .price= price
+                    .span.price_old= price_old
+                .btn.btn_2 Подробнее

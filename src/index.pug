@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Shop
+    link(rel="stylesheet", href="./css/style.css")
+  body
+    include ./templates/pug/main/header
+
+    main
+      .mainList
+        .wrap
+          .grid-box
+            .grid-2
+              .grid-item
+                form(action="").mainList__item
+                  label.mainList__label Бюджет
+                    input(type="text" placeholder="Введите ваш бюджет на месяц" required="required").mainList__input#budget
+                  label.mainList__label Название магазина
+                    input(type="text" placeholder="Введите название магазина" required="required").mainList__input#nameShop
+                  label.mainList__label Список продукции
+                    input(type="text" placeholder="Название продукции(через запятую)" required="required").mainList__input#products
+                  label.mainList__label Время визита
+                    input(type="text" placeholder="Введите время визита" required="required").mainList__input#status
+
+                  .mainList-box
+                    .mainList-box__item
+                      .mainList-employer
+                        label.mainList__label Имя сотрудника
+                          input(type="text" placeholder="Введите имя сотрудника" required="required").mainList__input.employer__name
+                        label.mainList__label Должность
+                          input(type="text" placeholder="Введите его должность" required="required").mainList__input.employer__position
+                    .btn-box    
+                      button.btn.btn-employer Добавить сотрудника
+                  label.mainList__label.mainList-discount Установить ли скидку в 80% на все товары?
+                    .mainList-discount__item
+                    input(type="checkbox").mainList-discount__checkbox
+
+                  .btn-box
+                    button(type="submit").btn.btn-result Рассчитать
+
+              .grid-item
+                .mainList__item
+                  .mainList__text Дневной бюджет:
+                    span.mainList__budget
+                  .mainList__text Название магазина:
+                    span.mainList__nameShop
+                  .mainList__text Список продукции:
+                    span.mainList__products
+                  .mainList__text.mainList__text_list Список сотрудников:
+                    span.mainList__employer
+                  .mainList__text.mainList__status Статус работы:
+                    .mainList__status_now
+                    .mainList__status_icon
+
+          
+
+    include ./templates/pug/main/footer

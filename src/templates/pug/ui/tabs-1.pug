@@ -1,0 +1,9 @@
+mixin tabs-1(text, img_src, img_alt)
+    label.tabs-1__label
+        input(type="radio" name="tab-1").tabs-1__input
+        .tabs-1__box
+            .tabs-1__title-box
+                .tabs-1__img-box
+                    img(src=img_src, alt=img_alt).tabs-1__img
+                .tabs-1__title= text
+            .tabs-1__check
